@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Satrio </title>
+    <!-- 👇 css code file 👇 -->
+    <link rel="stylesheet" href="./src/style/global.css"/>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+</head>
+<body>
+    <header>
+        <div class="header__right">
+         <div class="dropdown">
+             <a href="#" id="menu-trigger">
+             <span class="material-icons">dehaze</span>
+             </a>
+             <div class="dropdown-content" id="dropdown-menu">
+              <div id="main-menu">
+                 <a href="#"><span class="material-icons">account_circle</span> Akun</a>
+                  <a href="#" id="go-to-about"><span class="material-icons">info</span> Tentang Kami</a>
+                 </div>
+
+                 <div id="about-submenu" style="display: none;">
+                     <a href="#" id="back-to-main" style="color: blueviolet; font-weight: bold; border-bottom: 1px solid whitesmoke;">
+                     <span class="material-icons">arrow_back</span> Kembali
+                     </a>
+                      <a href="#">Bantuan</a>
+                     <a href="#">Versi 1.0</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        </div>
+    </header>
+
+    <section>   
+        <div class="feature">
+            <img src="satrio.png" alt="Satrio" class="satrio">
+
+            <div class="search">
+                <div class="search__input">
+                    <input type="text" id="query" placeholder="search..." autocomplete="off">
+
+                    <button type="submit" id="searchBtn">
+                        <span class="material-icons">search</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- 👇 javascript code file 👇 -->
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
