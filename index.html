@@ -13,28 +13,29 @@
 </head>
 <body>
     <header>
-        <div class="header__right">
-         <div class="dropdown">
-             <a href="#" id="menu-trigger">
-             <span class="material-icons">dehaze</span>
-             </a>
-             <div class="dropdown-content" id="dropdown-menu">
-              <div id="main-menu">
-                 <a href="#"><span class="material-icons">account_circle</span> Akun</a>
-                 <a href="#" id="go-to-about"><span class="material-icons">info</span> Tentang Kami</a>
-                 </div>
+             <div class="menu-wrapper">
+                 <input type="checkbox" id="menu-toggle" class="hidden-checkbox">
+    
+                 <label for="menu-toggle" class="menu-icon">
+                 <span class="material-icons">dehaze</span>
+                 </label>
 
-                 <div id="about-submenu" style="display: none;">
-                     <a href="#" id="back-to-main" style="color: blueviolet; font-weight: bold; border-bottom: 1px solid whitesmoke;">
-                     <span class="material-icons">arrow_back</span> Kembali
-                     </a>
-                     <a href="#">Bantuan</a>
-                     <a href="#">Versi 1.0</a>
+                 <div class="sidebar-menu">
+                     <label for="menu-toggle" class="close-btn">&times;</label>
+        
+                     <div class="menu-content">
+                         <a href="#" class="menu-item">
+                         <span class="material-icons">account_circle</span>
+                          Akun
+                         </a> 
+                          <a href="#" class="menu-item">
+                         <span class="material-icons">info</span>
+                         Tentang Kami
+                         </a>
                      </div>
                  </div>
+                 <label for="menu-toggle" class="menu-overlay"></label>
              </div>
-         </div>
-        </div>
     </header>
 
     <section>   
@@ -44,7 +45,6 @@
             <div class="search">
                 <div class="search__input">
                     <input type="text" id="query" placeholder="search..." autocomplete="off">
-
                     <button type="submit" id="searchBtn">
                         <span class="material-icons">search</span>
                     </button>
